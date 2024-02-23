@@ -1,5 +1,4 @@
 button{
-    width:100px;
     height:40px;
     background-color: dodgerblue;
     color:white;
@@ -9,21 +8,13 @@ button{
     border-radius: 5px;
 }
 
-button:hover,#btArea2 button:hover{
+button:hover{
     background-color: brown;
     color:white;
     cursor:pointer;
 }
 
-h2{
-    font-size: medium;
-    color: blue;
-}
-
-.btGroup{
-    background-color: antiquewhite;
-}
-
-#btArea2 button{
-    background-color: darkolivegreen;
+img{
+    display: inline-flex;
+    margin: 10px 20px;
 }
