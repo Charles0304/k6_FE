@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded",()=>{
     //버튼을 가져오기
     const bt1 = document.querySelector("#bt1");
+    
+
+    
 
     bt1.addEventListener("click",()=>{
-        changeDice2();
+        changeDice4();
     });
 });
 const changeDice1=()=>{
@@ -30,4 +33,18 @@ const changeDice3=()=>{
     }
 
 }
+
+const changeDice4=()=>{
+    const imgs = document.querySelectorAll("img");
+    const btsNum = [1,1,1];
+    for(let [idx,bt] of imgs.entries()){
+        const rand = Math.floor(Math.random()*6)+1;
+        bt.setAttribute("src", `images/${rand}.png`);
+        btsNum[idx]=rand;
+
+    }
+
+}
+
+
 
