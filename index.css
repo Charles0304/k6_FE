@@ -54,6 +54,10 @@ section >h1{
     padding:20px;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    border: 1px dotted grey;
+    margin-top: 10px;
+    background-color:lightsteelblue
 }
 section{
     display: flex;
