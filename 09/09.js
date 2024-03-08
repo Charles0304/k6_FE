@@ -28,9 +28,9 @@ console.log("배열의 맵")
 //     return v+"👍";
 // })
 //콜백 body에 실행문이 없고 return문 하나만 있으면{}와 return 생략가능
-const arr2 = arr.map((v)=>v+"👍");
-console.log("=============")
-console.log("arr2 = ",arr2)
+// const arr2 = arr.map((v)=>v+"👍");
+// console.log("=============")
+// console.log("arr2 = ",arr2)
 for(let i in arr){
     console.log(arr[i], i);
 }
@@ -47,3 +47,27 @@ for(let [k,v] of Object.entries(obj)){
     console.log("오브젝트키 : ",k)
     console.log("오브젝트값 : ",v)
 }
+
+let arr2 = [];
+console.log("arr2 = ",arr2);
+
+for(let item of arr){
+    arr2.push(item);
+}
+
+console.log("반복문으로 arr 2 = ",arr2)
+
+let arr1 = [0,0,0,0,0,0,];
+for(let i in arr){
+    arr1[i]=arr[i];
+}
+console.log("반복문 첨자로 arr1 = ",arr1)
+
+let arr21 = [];
+arr21 = arr.filter((v)=>{
+    if(isNaN(v)) console.log(v);
+
+    return isNaN(v);
+})
+
+console.log("Filter arr21 = ",arr21)
